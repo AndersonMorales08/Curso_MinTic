@@ -13,8 +13,9 @@
     <!-- Elementos que muestran información -->
     <!-- Elementos que agrupan información -->
     <!-- <form method="GET"> -->
-    <form method="POST" action="https://express-server-method.herokuapp.com/"> <!-- El enviar la información la oculta -->
-
+    <!-- <form method="POST" action="https://express-server-method.herokuapp.com/"> --> <!-- El enviar la información la oculta -->
+    
+    <form method="POST">
         <!-- Recibir información -->
         <!-- <input> -->
 
@@ -24,12 +25,47 @@
             <input type="text">
         </label> -->
 
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="q">
+        <!-- <label for="name">Nombre</label> -->
+        <!-- <input type="text" id="name" name="q"> -->
 
-        <br>
+        <!-- <br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password"> -->
+
+        <!-- Agrupación -->
+        <!-- <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" name="nombre" id="name">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+        <fieldset>
+            <legend>Direccion</legend>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" name="ciudad" id="ciudad">
+            <br>
+            <label for="direccion">Direccion:</label>
+            <input type="password" name="direccion" id="direccion">
+        </fieldset> -->
+
+        <!-- Inputs -->
+        <label for="url">Url:</label>
+        <input type="url" id="url">
+        <br>
+        <label for="check">Checkbox:</label>
+        <input type="checkbox" id="check">
+        <br>
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio">
+        <br>
+        <label for="radio">Radio varias opciones:</label>
+        <br>
+        Masculino: <input type="radio" name="genero">
+        Femenino: <input type="radio" name="genero">
+        Otro: <input type="radio" name="genero">
+        <br>
 
         <!-- Opción 1 -->
         <button>Enviar</button>
